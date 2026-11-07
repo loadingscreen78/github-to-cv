@@ -23,7 +23,8 @@ jobs:
           python -m pip install -r requirements.txt
           sudo apt-get update && sudo apt-get install -y poppler-utils fonts-crosextra-carlito fonts-crosextra-caladea fonts-liberation
       - name: Check a Chromium-based browser is available for PDF tests
-        run: which google-chrome || which chromium || which chromium-browser || echo "no browser: PDF tests will be skipped"
+        run: |
+          which google-chrome || which chromium || which chromium-browser || echo "no browser: PDF tests will be skipped"
       - name: Tests
         run: python -m unittest discover -s tests -v
       - name: Render examples
