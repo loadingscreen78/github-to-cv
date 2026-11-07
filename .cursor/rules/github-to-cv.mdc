@@ -1,0 +1,10 @@
+---
+description: Build an ATS-optimised CV/resume from a GitHub profile (github-to-cv skill). Use when the user asks for a CV or resume from GitHub, or to tailor one to a job description.
+globs:
+alwaysApply: false
+---
+
+Follow @skills/github-to-cv/SKILL.md step by step (interview in rounds of ≤ 5 questions,
+fetch → analyse → write cv.json → validate → render → ATS check → iterate).
+Question bank: @skills/github-to-cv/references/interview.md
+Never invent facts. Outputs go to ./cv-output/<github-username>/. See @AGENTS.md for setup.

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+{#-
+  Shared ATS-safe skeleton. Every template extends this file and usually only
+  supplies style.css + manifest.json. Override any block below for structural
+  changes. Rules that keep it ATS-safe (please keep them in custom templates):
+    * one column, document order == reading order
+    * real text only: no icons, images, skill bars, or text inside SVG
+    * contact details in the body, never in page headers/footers
+    * standard section names (configurable in manifest.json "sectionTitles")
+-#}
+<html lang="{{ cv.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ cv.doc_title }}</title>
+<meta name="author" content="{{ cv.name }}">
+<meta name="description" content="{{ cv.label or cv.doc_word }}">
+<meta name="keywords" content="{{ cv.keywords|join(', ') }}">
+<meta name="generator" content="github-to-cv">
+<style>
+@page { size: {{ cv.paper_css }}; margin: {{ cv.margins }}; }
+:root { --accent: {{ cv.vars.accent }}; --page-w: {{ cv.paper_width }}; --page-h: {{ cv.paper_height }}; --margins: {{ cv.margins }}; }
+html { font-size: {{ cv.base_pt }}pt; }
+{{ css|safe }}
+</style>
+{% block head_extra %}{% endblock %}
+</head>
+<body class="tpl-{{ cv.manifest.name }} align-{{ cv.manifest.headerAlign|default('left') }}">
+<main class="page">
+{% block header %}
+<header class="cv-header">
+  <h1 class="cv-name">{{ cv.name }}</h1>
+  {% if cv.label %}<p class="cv-label">{{ cv.label }}</p>{% endif %}
+  {% for line in cv.contact_lines %}
+  <p class="cv-contacts">
+    {%- for c in line -%}
+      {%- if not loop.first %}<span class="sep"> | </span>{% endif -%}
+      {%- if c.url %}<a href="{{ c.url }}" class="contact c-{{ c.kind }}">{{ c.text }}</a>{% else %}<span class="contact c-{{ c.kind }}">{{ c.text }}</span>{% endif -%}
+    {%- endfor -%}
+  </p>
+  {% endfor %}
+</header>
+{% endblock %}
+
+{% macro entry(e) %}
+<div class="entry{% if e.compact %} entry--compact{% endif %}{% if e.roles %} entry--grouped{% endif %}">
+  <div class="entry-row row-1">
+    <div class="entry-main">
+      <span class="entry-title">{{ e.title }}</span>
+      {%- if e.extra %}<span class="entry-extra">{{ e.extra_sep }}{{ e.extra }}</span>{% endif -%}
+      {%- if e.link %}<span class="entry-link"><span class="sep"> | </span><a href="{{ e.link.url }}">{{ e.link.text }}</a></span>{% endif -%}
+      {%- if e.link2 %}<span class="entry-link"><span class="sep"> | </span><a href="{{ e.link2.url }}">{{ e.link2.text }}</a></span>{% endif -%}
+    </div>
+    {% if e.r1 %}<div class="entry-right">{{ e.r1 }}</div>{% endif %}
+  </div>
+  {% if e.sub or e.r2 %}
+  <div class="entry-row row-2">
+    <div class="entry-sub">{{ e.sub }}</div>
+    {% if e.r2 %}<div class="entry-right entry-right--2">{{ e.r2 }}</div>{% endif %}
+  </div>
+  {% endif %}
+  {% if e.detail %}<p class="entry-detail">{{ e.detail }}</p>{% endif %}
+  {% if e.summary %}<p class="entry-summary">{{ e.summary }}</p>{% endif %}
+  {% if e.highlights %}
+  <ul class="bullets">
+    {% for h in e.highlights %}<li>{{ h }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% for r in e.roles or [] %}
+  <div class="role">
+    <div class="entry-row role-row"><div class="role-title">{{ r.title }}</div>{% if r.date %}<div class="entry-right">{{ r.date }}</div>{% endif %}</div>
+    {% if r.summary %}<p class="entry-summary">{{ r.summary }}</p>{% endif %}
+    {% if r.highlights %}
+    <ul class="bullets">
+      {% for h in r.highlights %}<li>{{ h }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endmacro %}
+
+{% block sections %}
+{% for s in cv.sections %}
+<section class="section section--{{ s.id }} kind--{{ s.kind }}">
+  <h2 class="section-title"><span>{{ s.title }}</span></h2>
+  {% block section scoped %}
+  {% if s.kind == "summary" %}
+  <p class="summary">{{ s.text }}</p>
+  {% elif s.kind == "skills" %}
+    {% if s.style == "inline" %}
+  <p class="skills-inline">{% for i in s.flat %}{% if not loop.first %}<span class="sep"> | </span>{% endif %}<span class="kw">{{ i }}</span>{% endfor %}</p>
+    {% else %}
+  <div class="skills">
+    {% for g in s.groups %}
+    <p class="skill-line">{% if g.name and g.keywords %}<span class="skill-cat">{{ g.name }}:</span> {{ g.keywords|join(", ") }}{% else %}{{ g.name or g.keywords|join(", ") }}{% endif %}</p>
+    {% endfor %}
+  </div>
+    {% endif %}
+  {% elif s.kind == "inline" %}
+  <p class="inline-list">{% for i in s.elements %}{% if not loop.first %}<span class="sep"> | </span>{% endif %}{{ i }}{% endfor %}</p>
+  {% elif s.kind == "list" %}
+  <ul class="bullets list-items">{% for i in s.elements %}<li>{{ i }}</li>{% endfor %}</ul>
+  {% elif s.kind == "publications" %}
+  <ol class="pubs">
+    {% for e in s.entries %}
+    {% set c = e.citation %}
+    <li>{% for t, me in c.authors %}{% if me %}<strong>{{ t }}</strong>{% else %}{{ t }}{% endif %}{% endfor %}{% if c.authors %}. {% endif %}“{{ c.title }}.” {% if c.venue %}<em>{{ c.venue }}</em>{% endif %}{% if c.year %}, {{ c.year }}{% endif %}.{% if c.note %} {{ c.note }}.{% endif %}{% if e.link %} <a href="{{ e.link.url }}" class="pub-link">{{ e.link.text }}</a>{% endif %}</li>
+    {% endfor %}
+  </ol>
+  {% else %}
+    {% for e in s.entries %}{{ entry(e) }}{% endfor %}
+  {% endif %}
+  {% endblock %}
+</section>
+{% endfor %}
+{% endblock %}
+</main>
+</body>
+</html>

@@ -1,0 +1,1953 @@
+{
+  "_doc": "Canonical skills used to detect evidence in GitHub data and keywords in job descriptions. Entry forms: \"Name\" (matched case-insensitively), or {\"n\": canonical name, \"a\": [aliases], \"cs\": true for case-sensitive matching, \"p\": custom regex}. Add entries freely; keep names in the spelling recruiters search for.",
+  "version": 1,
+  "categories": {
+    "Languages": [
+      "Python",
+      "Java",
+      {
+        "n": "JavaScript",
+        "a": [
+          "JS",
+          "ECMAScript",
+          "ES6"
+        ]
+      },
+      {
+        "n": "TypeScript",
+        "a": [
+          "TS"
+        ],
+        "cs": true
+      },
+      {
+        "n": "C++",
+        "a": [
+          "CPP",
+          "C plus plus"
+        ]
+      },
+      {
+        "n": "C#",
+        "a": [
+          "CSharp",
+          "C Sharp"
+        ]
+      },
+      {
+        "n": "C",
+        "cs": true,
+        "p": "(?<![A-Za-z0-9_+#./\\-])C(?![A-Za-z0-9_+#/\\-&'])"
+      },
+      {
+        "n": "Go",
+        "a": [
+          "Golang"
+        ],
+        "cs": true,
+        "p": "(?<![A-Za-z0-9_+#./\\-])(?:Go(?!\\s+(?:to|ahead|back|through|here|there|for|on|into|live|over|further|beyond|away|out|up|down)\\b)|Golang|golang)(?![A-Za-z0-9_+#\\-])"
+      },
+      {
+        "n": "Rust",
+        "cs": true
+      },
+      "Kotlin",
+      {
+        "n": "Swift",
+        "cs": true
+      },
+      {
+        "n": "Ruby",
+        "cs": true
+      },
+      "PHP",
+      "Scala",
+      {
+        "n": "R",
+        "cs": true,
+        "p": "(?<![A-Za-z0-9_+#./\\-])R(?![A-Za-z0-9_+#&/'\\-])"
+      },
+      "MATLAB",
+      {
+        "n": "Julia",
+        "cs": true
+      },
+      {
+        "n": "Dart",
+        "cs": true
+      },
+      "Elixir",
+      "Erlang",
+      "Haskell",
+      "Clojure",
+      "F#",
+      "OCaml",
+      {
+        "n": "Objective-C",
+        "a": [
+          "ObjC",
+          "Objective C"
+        ]
+      },
+      "Perl",
+      "Lua",
+      {
+        "n": "Bash",
+        "a": [
+          "Shell",
+          "Shell scripting",
+          "shell scripts",
+          "Zsh"
+        ]
+      },
+      "PowerShell",
+      {
+        "n": "SQL",
+        "a": [
+          "T-SQL",
+          "TSQL",
+          "PL/SQL"
+        ]
+      },
+      {
+        "n": "Zig",
+        "cs": true
+      },
+      {
+        "n": "Assembly",
+        "a": [
+          "x86 assembly",
+          "ARM assembly",
+          "asm"
+        ]
+      },
+      "Fortran",
+      "COBOL",
+      "Groovy",
+      "Solidity",
+      "Verilog",
+      "SystemVerilog",
+      "VHDL",
+      {
+        "n": "GDScript",
+        "a": [
+          "GD Script"
+        ]
+      },
+      "Nim",
+      "Crystal"
+    ],
+    "Frontend": [
+      {
+        "n": "HTML",
+        "a": [
+          "HTML5"
+        ]
+      },
+      {
+        "n": "CSS",
+        "a": [
+          "CSS3"
+        ]
+      },
+      {
+        "n": "Sass",
+        "a": [
+          "SCSS"
+        ]
+      },
+      {
+        "n": "React",
+        "a": [
+          "React.js",
+          "ReactJS",
+          "React JS"
+        ],
+        "cs": true
+      },
+      {
+        "n": "Next.js",
+        "a": [
+          "NextJS",
+          "Next JS"
+        ]
+      },
+      {
+        "n": "Vue.js",
+        "a": [
+          "Vue",
+          "VueJS",
+          "Vue 3",
+          "Nuxt",
+          "Nuxt.js"
+        ]
+      },
+      {
+        "n": "Angular",
+        "a": [
+          "AngularJS"
+        ],
+        "cs": true
+      },
+      {
+        "n": "Svelte",
+        "a": [
+          "SvelteKit"
+        ]
+      },
+      {
+        "n": "Redux",
+        "a": [
+          "Redux Toolkit"
+        ]
+      },
+      {
+        "n": "Tailwind CSS",
+        "a": [
+          "Tailwind",
+          "TailwindCSS"
+        ]
+      },
+      {
+        "n": "Bootstrap",
+        "cs": true
+      },
+      {
+        "n": "Material UI",
+        "a": [
+          "MUI"
+        ]
+      },
+      "jQuery",
+      "Webpack",
+      "Vite",
+      "Babel",
+      "Storybook",
+      {
+        "n": "Three.js",
+        "a": [
+          "ThreeJS"
+        ]
+      },
+      {
+        "n": "D3.js",
+        "a": [
+          "D3"
+        ],
+        "cs": true
+      },
+      "WebGL",
+      {
+        "n": "Responsive Design",
+        "a": [
+          "responsive web design",
+          "mobile-first"
+        ]
+      },
+      {
+        "n": "Accessibility",
+        "a": [
+          "a11y",
+          "WCAG"
+        ]
+      },
+      {
+        "n": "PWA",
+        "a": [
+          "Progressive Web App",
+          "Progressive Web Apps"
+        ]
+      },
+      {
+        "n": "Electron",
+        "cs": true
+      },
+      {
+        "n": "Tauri",
+        "cs": true
+      },
+      {
+        "n": "Astro",
+        "cs": true
+      },
+      {
+        "n": "Remix",
+        "cs": true
+      },
+      {
+        "n": "Server-Side Rendering",
+        "a": [
+          "SSR"
+        ]
+      },
+      {
+        "n": "Web Components",
+        "a": [
+          "Lit"
+        ]
+      }
+    ],
+    "Backend": [
+      {
+        "n": "Node.js",
+        "a": [
+          "NodeJS",
+          "Node JS",
+          "Node"
+        ],
+        "cs": true,
+        "p": "(?<![A-Za-z0-9_+#./\\-])(?:Node\\.js|NodeJS|Node JS|Node|node\\.js|nodejs)(?![A-Za-z0-9_+#\\-])"
+      },
+      {
+        "n": "Express.js",
+        "a": [
+          "ExpressJS",
+          "Express"
+        ],
+        "cs": true
+      },
+      {
+        "n": "NestJS",
+        "a": [
+          "Nest.js"
+        ]
+      },
+      "Django",
+      {
+        "n": "Django REST Framework",
+        "a": [
+          "DRF"
+        ]
+      },
+      "Flask",
+      "FastAPI",
+      {
+        "n": "Spring Boot",
+        "a": [
+          "Spring",
+          "Spring Framework"
+        ],
+        "cs": true
+      },
+      {
+        "n": "Ruby on Rails",
+        "a": [
+          "Rails",
+          "RoR"
+        ],
+        "cs": true
+      },
+      "Laravel",
+      "Symfony",
+      {
+        "n": ".NET",
+        "a": [
+          ".NET Core",
+          "dotnet",
+          "ASP.NET",
+          "ASP.NET Core"
+        ]
+      },
+      {
+        "n": "Gin",
+        "cs": true,
+        "p": "(?<![A-Za-z0-9_+#./\\-])Gin(?![A-Za-z0-9_+#\\-])"
+      },
+      {
+        "n": "Phoenix",
+        "cs": true
+      },
+      "GraphQL",
+      {
+        "n": "REST APIs",
+        "a": [
+          "REST",
+          "RESTful",
+          "REST API",
+          "RESTful APIs"
+        ],
+        "cs": true,
+        "p": "(?<![A-Za-z0-9_+#./\\-])(?:REST(?:ful)?(?: APIs?)?|RESTful|restful|REST-API)(?![A-Za-z0-9_+#\\-])"
+      },
+      "gRPC",
+      {
+        "n": "WebSockets",
+        "a": [
+          "WebSocket",
+          "Socket.IO",
+          "socket.io"
+        ]
+      },
+      {
+        "n": "Microservices",
+        "a": [
+          "microservice",
+          "micro-services",
+          "microservice architecture"
+        ]
+      },
+      {
+        "n": "Kafka",
+        "a": [
+          "Apache Kafka"
+        ]
+      },
+      "RabbitMQ",
+      {
+        "n": "Celery",
+        "cs": true
+      },
+      "OpenAPI",
+      {
+        "n": "Swagger",
+        "cs": true
+      },
+      {
+        "n": "Serverless",
+        "a": [
+          "serverless architecture",
+          "FaaS"
+        ]
+      },
+      {
+        "n": "Message Queues",
+        "a": [
+          "message queue",
+          "message broker",
+          "SQS",
+          "Pub/Sub",
+          "NATS"
+        ]
+      }
+    ],
+    "Databases": [
+      {
+        "n": "PostgreSQL",
+        "a": [
+          "Postgres",
+          "psql"
+        ]
+      },
+      "MySQL",
+      {
+        "n": "MongoDB",
+        "a": [
+          "Mongo",
+          "Mongoose"
+        ]
+      },
+      "SQLite",
+      "Redis",
+      {
+        "n": "Cassandra",
+        "a": [
+          "Apache Cassandra",
+          "ScyllaDB"
+        ]
+      },
+      "DynamoDB",
+      {
+        "n": "Elasticsearch",
+        "a": [
+          "Elastic Search",
+          "OpenSearch",
+          "ELK"
+        ]
+      },
+      {
+        "n": "Snowflake",
+        "cs": true
+      },
+      "BigQuery",
+      "Redshift",
+      "Neo4j",
+      {
+        "n": "Firebase",
+        "a": [
+          "Firestore"
+        ]
+      },
+      "Supabase",
+      "Prisma",
+      "SQLAlchemy",
+      "Hibernate",
+      {
+        "n": "Oracle Database",
+        "a": [
+          "Oracle DB",
+          "Oracle SQL"
+        ]
+      },
+      {
+        "n": "SQL Server",
+        "a": [
+          "MSSQL",
+          "Microsoft SQL Server"
+        ]
+      },
+      "MariaDB",
+      "ClickHouse",
+      "CockroachDB",
+      "Memcached",
+      {
+        "n": "Vector Databases",
+        "a": [
+          "vector database",
+          "vector DB",
+          "vector store",
+          "Pinecone",
+          "Weaviate",
+          "Qdrant",
+          "Milvus",
+          "pgvector",
+          "Chroma",
+          "ChromaDB"
+        ]
+      },
+      {
+        "n": "Database Design",
+        "a": [
+          "data modeling",
+          "data modelling",
+          "schema design"
+        ]
+      }
+    ],
+    "Cloud": [
+      {
+        "n": "AWS",
+        "a": [
+          "Amazon Web Services"
+        ]
+      },
+      {
+        "n": "GCP",
+        "a": [
+          "Google Cloud",
+          "Google Cloud Platform"
+        ]
+      },
+      {
+        "n": "Azure",
+        "a": [
+          "Microsoft Azure"
+        ]
+      },
+      {
+        "n": "AWS Lambda",
+        "a": [
+          "Lambda functions"
+        ]
+      },
+      {
+        "n": "EC2",
+        "cs": true
+      },
+      {
+        "n": "S3",
+        "cs": true,
+        "p": "(?<![A-Za-z0-9_+#./\\-])(?:S3|AWS S3|Amazon S3)(?![A-Za-z0-9_+#\\-])"
+      },
+      {
+        "n": "ECS",
+        "cs": true
+      },
+      {
+        "n": "EKS",
+        "cs": true
+      },
+      {
+        "n": "GKE",
+        "cs": true
+      },
+      {
+        "n": "AKS",
+        "cs": true
+      },
+      "CloudFormation",
+      "Cloudflare",
+      "Vercel",
+      "Netlify",
+      "Heroku",
+      "DigitalOcean",
+      {
+        "n": "Cloud Run",
+        "a": [
+          "Google Cloud Run"
+        ]
+      },
+      "Firebase Hosting"
+    ],
+    "DevOps": [
+      {
+        "n": "Docker",
+        "a": [
+          "Dockerfile",
+          "containerization",
+          "containers"
+        ]
+      },
+      {
+        "n": "Docker Compose",
+        "a": [
+          "docker-compose"
+        ]
+      },
+      {
+        "n": "Kubernetes",
+        "a": [
+          "K8s",
+          "k8s"
+        ]
+      },
+      {
+        "n": "Helm",
+        "cs": true
+      },
+      {
+        "n": "Terraform",
+        "a": [
+          "HCL"
+        ]
+      },
+      "Ansible",
+      "Pulumi",
+      {
+        "n": "CI/CD",
+        "a": [
+          "CI / CD",
+          "CICD",
+          "continuous integration",
+          "continuous delivery",
+          "continuous deployment"
+        ]
+      },
+      "GitHub Actions",
+      {
+        "n": "GitLab CI",
+        "a": [
+          "GitLab CI/CD"
+        ]
+      },
+      "Jenkins",
+      "CircleCI",
+      {
+        "n": "Argo CD",
+        "a": [
+          "ArgoCD",
+          "GitOps"
+        ]
+      },
+      "Prometheus",
+      "Grafana",
+      "Datadog",
+      {
+        "n": "OpenTelemetry",
+        "a": [
+          "OTel"
+        ]
+      },
+      {
+        "n": "Observability",
+        "a": [
+          "monitoring",
+          "logging and monitoring",
+          "tracing"
+        ]
+      },
+      {
+        "n": "Nginx",
+        "a": [
+          "NGINX"
+        ]
+      },
+      "Linux",
+      {
+        "n": "Git",
+        "cs": false,
+        "p": "(?<![A-Za-z0-9_+#./\\-])[Gg]it(?![A-Za-z0-9_+#\\-])"
+      },
+      "GitHub",
+      "GitLab",
+      "Vagrant",
+      "Istio",
+      {
+        "n": "Site Reliability Engineering",
+        "a": [
+          "SRE"
+        ]
+      },
+      {
+        "n": "Infrastructure as Code",
+        "a": [
+          "IaC"
+        ]
+      },
+      {
+        "n": "Incident Response",
+        "a": [
+          "on-call",
+          "on call",
+          "incident management"
+        ]
+      },
+      {
+        "n": "Load Balancing",
+        "a": [
+          "load balancer",
+          "load balancers"
+        ]
+      },
+      "Bazel",
+      "CMake",
+      {
+        "n": "Make",
+        "cs": true,
+        "p": "(?<![A-Za-z0-9_+#./\\-])(?:Makefile|GNU Make)(?![A-Za-z0-9_+#\\-])"
+      }
+    ],
+    "Data & ML": [
+      {
+        "n": "Machine Learning",
+        "a": [
+          "ML"
+        ],
+        "cs": false,
+        "p": "(?<![A-Za-z0-9_+#./\\-])(?:[Mm]achine [Ll]earning|ML)(?![A-Za-z0-9_+#\\-])"
+      },
+      {
+        "n": "Deep Learning",
+        "a": [
+          "neural networks",
+          "neural network",
+          "DNN"
+        ]
+      },
+      {
+        "n": "NLP",
+        "a": [
+          "Natural Language Processing"
+        ]
+      },
+      {
+        "n": "Computer Vision",
+        "a": [
+          "image recognition",
+          "object detection",
+          "image segmentation"
+        ]
+      },
+      {
+        "n": "PyTorch",
+        "a": [
+          "Torch"
+        ]
+      },
+      {
+        "n": "TensorFlow",
+        "a": [
+          "TF2",
+          "TensorFlow 2"
+        ]
+      },
+      "Keras",
+      {
+        "n": "scikit-learn",
+        "a": [
+          "sklearn",
+          "scikit learn",
+          "scikitlearn"
+        ]
+      },
+      {
+        "n": "Pandas",
+        "a": [
+          "pandas"
+        ]
+      },
+      "NumPy",
+      "SciPy",
+      "Matplotlib",
+      "Seaborn",
+      "Plotly",
+      {
+        "n": "Jupyter",
+        "a": [
+          "Jupyter Notebook",
+          "JupyterLab",
+          "Jupyter notebooks"
+        ]
+      },
+      {
+        "n": "Hugging Face",
+        "a": [
+          "HuggingFace",
+          "Hugging Face Transformers",
+          "transformers library"
+        ]
+      },
+      {
+        "n": "LLMs",
+        "a": [
+          "LLM",
+          "Large Language Models",
+          "large language model"
+        ]
+      },
+      {
+        "n": "Generative AI",
+        "a": [
+          "GenAI",
+          "Gen AI"
+        ]
+      },
+      "LangChain",
+      "LlamaIndex",
+      {
+        "n": "RAG",
+        "a": [
+          "Retrieval-Augmented Generation",
+          "retrieval augmented generation"
+        ],
+        "cs": true
+      },
+      {
+        "n": "OpenAI API",
+        "a": [
+          "OpenAI",
+          "GPT-4",
+          "ChatGPT API"
+        ]
+      },
+      {
+        "n": "Prompt Engineering",
+        "a": [
+          "prompting"
+        ]
+      },
+      {
+        "n": "Fine-tuning",
+        "a": [
+          "fine tuning",
+          "finetuning",
+          "LoRA",
+          "PEFT"
+        ]
+      },
+      {
+        "n": "AI Agents",
+        "a": [
+          "agentic",
+          "LLM agents",
+          "tool calling",
+          "function calling",
+          "MCP"
+        ]
+      },
+      "XGBoost",
+      "LightGBM",
+      "CatBoost",
+      "OpenCV",
+      {
+        "n": "YOLO",
+        "cs": true
+      },
+      {
+        "n": "Apache Spark",
+        "a": [
+          "Spark"
+        ],
+        "cs": true
+      },
+      "PySpark",
+      "Hadoop",
+      {
+        "n": "Airflow",
+        "a": [
+          "Apache Airflow"
+        ]
+      },
+      {
+        "n": "dbt",
+        "cs": true
+      },
+      {
+        "n": "ETL",
+        "a": [
+          "ELT",
+          "ETL pipelines"
+        ],
+        "cs": true
+      },
+      {
+        "n": "Data Pipelines",
+        "a": [
+          "data pipeline",
+          "data pipelines"
+        ]
+      },
+      "Tableau",
+      {
+        "n": "Power BI",
+        "a": [
+          "PowerBI"
+        ]
+      },
+      "Looker",
+      {
+        "n": "Statistics",
+        "a": [
+          "statistical analysis",
+          "statistical modeling",
+          "statistical modelling"
+        ]
+      },
+      {
+        "n": "A/B Testing",
+        "a": [
+          "A/B tests",
+          "AB testing",
+          "experimentation"
+        ]
+      },
+      "MLOps",
+      "MLflow",
+      "Kubeflow",
+      {
+        "n": "Weights & Biases",
+        "a": [
+          "W&B",
+          "wandb"
+        ]
+      },
+      "FAISS",
+      "ONNX",
+      "CUDA",
+      {
+        "n": "Reinforcement Learning",
+        "a": [
+          "RL agents",
+          "multi-armed bandits",
+          "contextual bandits"
+        ]
+      },
+      {
+        "n": "Time Series",
+        "a": [
+          "time-series",
+          "forecasting"
+        ]
+      },
+      {
+        "n": "Recommender Systems",
+        "a": [
+          "recommendation systems",
+          "recommendation engine",
+          "recommender system"
+        ]
+      },
+      {
+        "n": "Data Visualization",
+        "a": [
+          "data visualisation",
+          "dashboards"
+        ]
+      },
+      {
+        "n": "Data Analysis",
+        "a": [
+          "data analytics",
+          "exploratory data analysis",
+          "EDA"
+        ]
+      },
+      {
+        "n": "Feature Engineering",
+        "a": []
+      },
+      {
+        "n": "Model Deployment",
+        "a": [
+          "model serving",
+          "inference serving",
+          "TorchServe",
+          "Triton",
+          "vLLM"
+        ]
+      },
+      "Streamlit",
+      "Gradio",
+      {
+        "n": "Polars",
+        "cs": true
+      },
+      {
+        "n": "Kafka Streams",
+        "a": [
+          "Flink",
+          "Apache Flink",
+          "stream processing"
+        ]
+      },
+      {
+        "n": "Databricks",
+        "a": []
+      },
+      {
+        "n": "Data Warehousing",
+        "a": [
+          "data warehouse",
+          "data lake",
+          "lakehouse"
+        ]
+      }
+    ],
+    "Mobile": [
+      "Android",
+      {
+        "n": "iOS",
+        "cs": true
+      },
+      {
+        "n": "React Native",
+        "a": []
+      },
+      "Flutter",
+      "SwiftUI",
+      "UIKit",
+      {
+        "n": "Jetpack Compose",
+        "a": []
+      },
+      "Xamarin",
+      {
+        "n": "Expo",
+        "cs": true
+      },
+      {
+        "n": "Kotlin Multiplatform",
+        "a": [
+          "KMP",
+          "KMM"
+        ]
+      },
+      {
+        "n": "Ionic",
+        "cs": true
+      }
+    ],
+    "Testing": [
+      {
+        "n": "Unit Testing",
+        "a": [
+          "unit tests",
+          "unit test"
+        ]
+      },
+      {
+        "n": "Integration Testing",
+        "a": [
+          "integration tests"
+        ]
+      },
+      {
+        "n": "End-to-End Testing",
+        "a": [
+          "E2E testing",
+          "e2e tests",
+          "end to end testing"
+        ]
+      },
+      {
+        "n": "TDD",
+        "a": [
+          "Test-Driven Development",
+          "test driven development"
+        ]
+      },
+      "Jest",
+      "Vitest",
+      "Mocha",
+      {
+        "n": "Cypress",
+        "cs": true
+      },
+      {
+        "n": "Playwright",
+        "cs": true
+      },
+      "Selenium",
+      "pytest",
+      "JUnit",
+      {
+        "n": "Testing Library",
+        "a": [
+          "React Testing Library"
+        ]
+      },
+      "Postman",
+      {
+        "n": "Load Testing",
+        "a": [
+          "performance testing",
+          "k6",
+          "JMeter",
+          "Locust"
+        ]
+      }
+    ],
+    "Security": [
+      "OWASP",
+      {
+        "n": "Penetration Testing",
+        "a": [
+          "pentesting",
+          "pen testing",
+          "pentest"
+        ]
+      },
+      {
+        "n": "OAuth 2.0",
+        "a": [
+          "OAuth",
+          "OAuth2",
+          "OpenID Connect",
+          "OIDC"
+        ]
+      },
+      "JWT",
+      {
+        "n": "SSO",
+        "a": [
+          "single sign-on",
+          "SAML"
+        ]
+      },
+      {
+        "n": "Cryptography",
+        "a": [
+          "encryption",
+          "TLS"
+        ]
+      },
+      "Burp Suite",
+      "Metasploit",
+      "Wireshark",
+      "Nmap",
+      {
+        "n": "SIEM",
+        "a": [
+          "Splunk"
+        ]
+      },
+      {
+        "n": "Threat Modeling",
+        "a": [
+          "threat modelling"
+        ]
+      },
+      {
+        "n": "Vulnerability Assessment",
+        "a": [
+          "vulnerability management",
+          "CVE"
+        ]
+      },
+      {
+        "n": "IAM",
+        "a": [
+          "identity and access management"
+        ],
+        "cs": true
+      },
+      {
+        "n": "Zero Trust",
+        "a": []
+      },
+      {
+        "n": "SAST/DAST",
+        "a": [
+          "SAST",
+          "DAST",
+          "static analysis"
+        ]
+      },
+      {
+        "n": "Reverse Engineering",
+        "a": [
+          "Ghidra",
+          "IDA Pro"
+        ]
+      },
+      {
+        "n": "Malware Analysis",
+        "a": []
+      },
+      {
+        "n": "CTF",
+        "a": [
+          "capture the flag"
+        ],
+        "cs": true
+      },
+      {
+        "n": "Network Security",
+        "a": [
+          "firewalls",
+          "IDS/IPS"
+        ]
+      },
+      {
+        "n": "Application Security",
+        "a": [
+          "AppSec",
+          "secure coding"
+        ]
+      },
+      {
+        "n": "Compliance",
+        "a": [
+          "SOC 2",
+          "SOC2",
+          "ISO 27001",
+          "GDPR",
+          "HIPAA",
+          "PCI DSS",
+          "PCI-DSS"
+        ]
+      }
+    ],
+    "Embedded & Hardware": [
+      {
+        "n": "Embedded C",
+        "a": [
+          "embedded systems",
+          "embedded software"
+        ]
+      },
+      {
+        "n": "RTOS",
+        "a": [
+          "FreeRTOS",
+          "Zephyr",
+          "real-time operating system"
+        ]
+      },
+      "Arduino",
+      {
+        "n": "Raspberry Pi",
+        "a": [
+          "RPi"
+        ]
+      },
+      "STM32",
+      "ESP32",
+      {
+        "n": "FPGA",
+        "a": []
+      },
+      {
+        "n": "Embedded Linux",
+        "a": [
+          "Yocto",
+          "Buildroot"
+        ]
+      },
+      {
+        "n": "Firmware",
+        "a": [
+          "firmware development"
+        ]
+      },
+      {
+        "n": "Communication Protocols",
+        "a": [
+          "UART",
+          "SPI",
+          "I2C",
+          "CAN bus",
+          "Modbus"
+        ],
+        "cs": true
+      },
+      {
+        "n": "IoT",
+        "a": [
+          "Internet of Things"
+        ],
+        "cs": true
+      },
+      "MQTT",
+      {
+        "n": "ROS",
+        "a": [
+          "ROS2",
+          "ROS 2",
+          "Robot Operating System"
+        ],
+        "cs": true
+      },
+      {
+        "n": "Robotics",
+        "a": []
+      },
+      {
+        "n": "PCB Design",
+        "a": [
+          "KiCad",
+          "Altium"
+        ]
+      },
+      {
+        "n": "Control Systems",
+        "a": [
+          "PID control",
+          "PID controller"
+        ]
+      }
+    ],
+    "Game Development": [
+      {
+        "n": "Unity",
+        "a": [
+          "Unity3D",
+          "Unity 3D"
+        ],
+        "cs": true
+      },
+      {
+        "n": "Unreal Engine",
+        "a": [
+          "Unreal",
+          "UE5",
+          "UE4"
+        ]
+      },
+      "Godot",
+      {
+        "n": "Game Development",
+        "a": [
+          "gamedev",
+          "game dev"
+        ]
+      },
+      "OpenGL",
+      "Vulkan",
+      "DirectX",
+      {
+        "n": "Blender",
+        "cs": true
+      },
+      {
+        "n": "Shaders",
+        "a": [
+          "HLSL",
+          "GLSL",
+          "shader programming"
+        ]
+      },
+      {
+        "n": "Game Physics",
+        "a": [
+          "physics engine"
+        ]
+      }
+    ],
+    "Web3": [
+      "Ethereum",
+      {
+        "n": "Smart Contracts",
+        "a": [
+          "smart contract"
+        ]
+      },
+      {
+        "n": "Web3",
+        "a": [
+          "Web3.js",
+          "ethers.js",
+          "viem"
+        ]
+      },
+      "Hardhat",
+      {
+        "n": "Foundry",
+        "cs": true
+      },
+      {
+        "n": "Blockchain",
+        "a": [
+          "distributed ledger"
+        ]
+      },
+      {
+        "n": "Solana",
+        "cs": true
+      },
+      {
+        "n": "DeFi",
+        "cs": true
+      }
+    ],
+    "Tools": [
+      "Jira",
+      "Confluence",
+      "Figma",
+      "Gradle",
+      "Maven",
+      {
+        "n": "npm",
+        "cs": true
+      },
+      {
+        "n": "Yarn",
+        "cs": true
+      },
+      {
+        "n": "pnpm",
+        "cs": true
+      },
+      {
+        "n": "Poetry",
+        "cs": true
+      },
+      {
+        "n": "Conda",
+        "a": [
+          "Anaconda",
+          "Miniconda"
+        ]
+      },
+      {
+        "n": "VS Code",
+        "a": [
+          "Visual Studio Code"
+        ]
+      },
+      {
+        "n": "Notion",
+        "cs": true
+      },
+      {
+        "n": "Excel",
+        "a": [
+          "Microsoft Excel",
+          "spreadsheets"
+        ],
+        "cs": true
+      },
+      {
+        "n": "LaTeX",
+        "a": []
+      }
+    ],
+    "Practices": [
+      {
+        "n": "Agile",
+        "a": [
+          "agile methodologies"
+        ]
+      },
+      "Scrum",
+      "Kanban",
+      {
+        "n": "System Design",
+        "a": [
+          "systems design",
+          "software architecture",
+          "architecture design"
+        ]
+      },
+      {
+        "n": "Distributed Systems",
+        "a": [
+          "distributed computing"
+        ]
+      },
+      {
+        "n": "OOP",
+        "a": [
+          "Object-Oriented Programming",
+          "object oriented programming",
+          "object-oriented design",
+          "OOD"
+        ]
+      },
+      {
+        "n": "Functional Programming",
+        "a": []
+      },
+      {
+        "n": "Design Patterns",
+        "a": []
+      },
+      {
+        "n": "Data Structures & Algorithms",
+        "a": [
+          "data structures",
+          "algorithms",
+          "DSA"
+        ]
+      },
+      {
+        "n": "Code Review",
+        "a": [
+          "code reviews"
+        ]
+      },
+      {
+        "n": "Open Source",
+        "a": [
+          "open-source",
+          "OSS"
+        ]
+      },
+      {
+        "n": "API Design",
+        "a": [
+          "API development",
+          "API-first"
+        ]
+      },
+      {
+        "n": "Performance Optimization",
+        "a": [
+          "performance tuning",
+          "profiling",
+          "optimization"
+        ]
+      },
+      {
+        "n": "Scalability",
+        "a": [
+          "scalable systems",
+          "high availability",
+          "horizontal scaling"
+        ]
+      },
+      {
+        "n": "Caching",
+        "a": [
+          "cache"
+        ]
+      },
+      {
+        "n": "Concurrency",
+        "a": [
+          "multithreading",
+          "multi-threading",
+          "parallelism",
+          "async programming",
+          "asyncio"
+        ]
+      },
+      {
+        "n": "Event-Driven Architecture",
+        "a": [
+          "event-driven",
+          "event driven",
+          "event sourcing",
+          "CQRS"
+        ]
+      },
+      {
+        "n": "Domain-Driven Design",
+        "a": [
+          "DDD"
+        ],
+        "cs": true
+      },
+      {
+        "n": "Technical Documentation",
+        "a": [
+          "technical writing",
+          "documentation"
+        ]
+      },
+      {
+        "n": "Version Control",
+        "a": []
+      },
+      {
+        "n": "Cross-Platform Development",
+        "a": [
+          "cross-platform"
+        ]
+      },
+      {
+        "n": "Product Analytics",
+        "a": [
+          "Mixpanel",
+          "Amplitude",
+          "Google Analytics"
+        ]
+      },
+      {
+        "n": "SEO",
+        "a": [
+          "search engine optimization"
+        ],
+        "cs": true
+      }
+    ],
+    "Soft Skills": [
+      {
+        "n": "Leadership",
+        "a": [
+          "led a team",
+          "team lead",
+          "tech lead",
+          "technical leadership"
+        ]
+      },
+      {
+        "n": "Mentoring",
+        "a": [
+          "mentorship",
+          "mentored",
+          "coaching"
+        ]
+      },
+      {
+        "n": "Communication",
+        "a": [
+          "communication skills",
+          "written and verbal communication"
+        ]
+      },
+      {
+        "n": "Stakeholder Management",
+        "a": [
+          "stakeholders",
+          "cross-functional",
+          "cross functional"
+        ]
+      },
+      {
+        "n": "Problem Solving",
+        "a": [
+          "problem-solving"
+        ]
+      },
+      {
+        "n": "Project Management",
+        "a": [
+          "program management"
+        ]
+      },
+      {
+        "n": "Ownership",
+        "a": [
+          "end-to-end ownership",
+          "take ownership"
+        ]
+      },
+      {
+        "n": "Hiring",
+        "a": [
+          "interviewing",
+          "recruiting"
+        ]
+      }
+    ]
+  },
+  "githubLanguageMap": {
+    "Jupyter Notebook": "Jupyter",
+    "Shell": "Bash",
+    "HCL": "Terraform",
+    "Dockerfile": "Docker",
+    "Cuda": "CUDA",
+    "Vue": "Vue.js",
+    "PLpgSQL": "PostgreSQL",
+    "TSQL": "SQL",
+    "SCSS": "Sass",
+    "Sass": "Sass",
+    "ShaderLab": "Unity",
+    "HLSL": "Shaders",
+    "GLSL": "Shaders",
+    "Svelte": "Svelte",
+    "Astro": "Astro",
+    "Objective-C": "Objective-C",
+    "Objective-C++": "Objective-C",
+    "Go": "Go",
+    "C++": "C++",
+    "C#": "C#",
+    "C": "C",
+    "Vim Script": null,
+    "Makefile": null,
+    "Batchfile": null,
+    "Procfile": null,
+    "Roff": null,
+    "Smarty": null,
+    "MDX": null,
+    "TeX": "LaTeX",
+    "Nix": null,
+    "Starlark": "Bazel",
+    "CMake": "CMake",
+    "Mustache": null,
+    "Handlebars": null,
+    "EJS": null,
+    "Jinja": null,
+    "Less": "CSS",
+    "Stylus": "CSS",
+    "PowerShell": "PowerShell",
+    "Rich Text Format": null,
+    "Python": "Python",
+    "Kotlin": "Kotlin",
+    "Swift": "Swift",
+    "Ruby": "Ruby",
+    "Rust": "Rust",
+    "Dart": "Dart",
+    "Java": "Java",
+    "JavaScript": "JavaScript",
+    "TypeScript": "TypeScript",
+    "HTML": "HTML",
+    "CSS": "CSS"
+  },
+  "noiseLanguages": [
+    "Makefile",
+    "Batchfile",
+    "Procfile",
+    "Roff",
+    "Smarty",
+    "MDX",
+    "Nix",
+    "Vim Script",
+    "Mustache",
+    "Handlebars",
+    "EJS",
+    "Jinja",
+    "Rich Text Format",
+    "Dockerfile"
+  ],
+  "implies": {
+    "_doc": "Evidence implications used when reading GitHub data only (implied evidence is capped at 'medium'). Never used for JD parsing: an ATS searching for 'CI/CD' will not match 'GitHub Actions', so the ATS checker instead suggests adding the exact term.",
+    "AWS Lambda": [
+      "AWS",
+      "Serverless"
+    ],
+    "EC2": [
+      "AWS"
+    ],
+    "S3": [
+      "AWS"
+    ],
+    "ECS": [
+      "AWS",
+      "Docker"
+    ],
+    "EKS": [
+      "AWS",
+      "Kubernetes"
+    ],
+    "GKE": [
+      "GCP",
+      "Kubernetes"
+    ],
+    "AKS": [
+      "Azure",
+      "Kubernetes"
+    ],
+    "Cloud Run": [
+      "GCP",
+      "Docker"
+    ],
+    "DynamoDB": [
+      "AWS"
+    ],
+    "CloudFormation": [
+      "AWS",
+      "Infrastructure as Code"
+    ],
+    "BigQuery": [
+      "GCP",
+      "Data Warehousing"
+    ],
+    "Redshift": [
+      "AWS",
+      "Data Warehousing"
+    ],
+    "Snowflake": [
+      "Data Warehousing"
+    ],
+    "Docker Compose": [
+      "Docker"
+    ],
+    "Helm": [
+      "Kubernetes"
+    ],
+    "GitHub Actions": [
+      "CI/CD"
+    ],
+    "GitLab CI": [
+      "CI/CD"
+    ],
+    "Jenkins": [
+      "CI/CD"
+    ],
+    "CircleCI": [
+      "CI/CD"
+    ],
+    "Argo CD": [
+      "CI/CD",
+      "Kubernetes"
+    ],
+    "Terraform": [
+      "Infrastructure as Code"
+    ],
+    "Pulumi": [
+      "Infrastructure as Code"
+    ],
+    "Ansible": [
+      "Infrastructure as Code"
+    ],
+    "Kafka": [
+      "Message Queues",
+      "Event-Driven Architecture"
+    ],
+    "RabbitMQ": [
+      "Message Queues"
+    ],
+    "Prometheus": [
+      "Observability"
+    ],
+    "Grafana": [
+      "Observability"
+    ],
+    "Datadog": [
+      "Observability"
+    ],
+    "OpenTelemetry": [
+      "Observability"
+    ],
+    "FastAPI": [
+      "Python",
+      "REST APIs"
+    ],
+    "Django": [
+      "Python"
+    ],
+    "Flask": [
+      "Python"
+    ],
+    "Django REST Framework": [
+      "Django",
+      "REST APIs",
+      "Python"
+    ],
+    "Spring Boot": [
+      "Java"
+    ],
+    "Ruby on Rails": [
+      "Ruby"
+    ],
+    "Laravel": [
+      "PHP"
+    ],
+    "Express.js": [
+      "Node.js"
+    ],
+    "NestJS": [
+      "Node.js",
+      "TypeScript"
+    ],
+    "Next.js": [
+      "React"
+    ],
+    "SwiftUI": [
+      "Swift",
+      "iOS"
+    ],
+    "UIKit": [
+      "iOS"
+    ],
+    "Jetpack Compose": [
+      "Kotlin",
+      "Android"
+    ],
+    "Flutter": [
+      "Dart"
+    ],
+    "PySpark": [
+      "Apache Spark",
+      "Python"
+    ],
+    "Airflow": [
+      "Data Pipelines"
+    ],
+    "dbt": [
+      "SQL",
+      "Data Pipelines"
+    ],
+    "pytest": [
+      "Unit Testing"
+    ],
+    "Jest": [
+      "Unit Testing"
+    ],
+    "JUnit": [
+      "Unit Testing"
+    ],
+    "Vitest": [
+      "Unit Testing"
+    ],
+    "Cypress": [
+      "End-to-End Testing"
+    ],
+    "Playwright": [
+      "End-to-End Testing"
+    ],
+    "Selenium": [
+      "End-to-End Testing"
+    ],
+    "TensorFlow": [
+      "Deep Learning"
+    ],
+    "PyTorch": [
+      "Deep Learning"
+    ],
+    "Keras": [
+      "Deep Learning"
+    ],
+    "scikit-learn": [
+      "Machine Learning"
+    ],
+    "XGBoost": [
+      "Machine Learning"
+    ],
+    "LightGBM": [
+      "Machine Learning"
+    ],
+    "CatBoost": [
+      "Machine Learning"
+    ],
+    "LangChain": [
+      "LLMs"
+    ],
+    "LlamaIndex": [
+      "LLMs"
+    ],
+    "RAG": [
+      "LLMs"
+    ],
+    "OpenAI API": [
+      "LLMs"
+    ],
+    "Hugging Face": [
+      "Machine Learning"
+    ],
+    "gRPC": [
+      "Microservices"
+    ],
+    "Event-Driven Architecture": [],
+    "PostgreSQL": [
+      "SQL"
+    ],
+    "MySQL": [
+      "SQL"
+    ],
+    "SQLite": [
+      "SQL"
+    ]
+  }
+}

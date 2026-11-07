@@ -1,0 +1,13 @@
+{
+  "_doc": "Strong opening verbs for CV bullets (past tense; use present tense for the current role). 'weak' openers are flagged by ats_check.py and validate_cv.py.",
+  "strong": {
+    "build": ["Architected", "Built", "Designed", "Developed", "Engineered", "Implemented", "Launched", "Shipped", "Created", "Prototyped", "Released", "Published", "Delivered", "Deployed", "Introduced", "Integrated", "Authored", "Wrote", "Programmed", "Coded", "Modeled", "Trained", "Instrumented", "Containerized", "Automated", "Open-sourced", "Productionized"],
+    "improve": ["Accelerated", "Boosted", "Cut", "Reduced", "Decreased", "Doubled", "Tripled", "Eliminated", "Enhanced", "Hardened", "Improved", "Increased", "Lowered", "Migrated", "Modernized", "Optimized", "Rearchitected", "Redesigned", "Refactored", "Rewrote", "Scaled", "Simplified", "Sped", "Stabilized", "Streamlined", "Strengthened", "Upgraded", "Consolidated", "Fixed", "Resolved", "Debugged", "Profiled", "Tuned", "Saved", "Raised", "Grew", "Expanded"],
+    "lead": ["Led", "Owned", "Drove", "Directed", "Headed", "Managed", "Mentored", "Coached", "Coordinated", "Championed", "Spearheaded", "Established", "Founded", "Initiated", "Organized", "Oversaw", "Supervised", "Hired", "Onboarded", "Run", "Ran", "Chaired", "Guided", "Unblocked", "Aligned", "Facilitated"],
+    "analyze": ["Analyzed", "Assessed", "Audited", "Benchmarked", "Diagnosed", "Evaluated", "Forecasted", "Identified", "Investigated", "Measured", "Monitored", "Quantified", "Researched", "Surveyed", "Tested", "Validated", "Verified", "Discovered", "Detected", "Mapped", "Reviewed"],
+    "communicate": ["Authored", "Documented", "Presented", "Taught", "Trained", "Advocated", "Negotiated", "Partnered", "Collaborated", "Persuaded", "Proposed", "Pitched", "Translated", "Wrote", "Spoke", "Lectured", "Contributed"],
+    "achieve": ["Achieved", "Won", "Earned", "Exceeded", "Ranked", "Secured", "Awarded", "Completed", "Placed", "Qualified", "Certified", "Recognized", "Selected"]
+  },
+  "weak": ["Responsible", "Worked", "Helped", "Assisted", "Participated", "Involved", "Handled", "Tasked", "Duties", "Did", "Made", "Got", "Was", "Were", "Tried", "Used", "Utilized", "Working", "Helping", "Assisting"],
+  "cliches": ["hardworking", "hard-working", "team player", "go-getter", "synergy", "detail-oriented", "detail oriented", "results-driven", "results driven", "self-starter", "self starter", "passionate about", "think outside the box", "dynamic individual", "rockstar", "ninja", "guru", "best of breed", "proven track record", "highly motivated", "excellent communication skills", "responsible for", "duties included", "go-to person", "strategic thinker", "fast learner", "quick learner", "references available upon request"]
+}

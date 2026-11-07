@@ -1,0 +1,167 @@
+{
+  "$schema": "github-to-cv/cv@1",
+  "basics": {
+    "name": "Ananya Rao",
+    "label": "Software Engineer — New Grad",
+    "email": "ananya.rao@example.com",
+    "location": {
+      "display": "Pune, India"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/ananyarao-example"
+      },
+      {
+        "network": "GitHub",
+        "url": "https://github.com/ananyarao-example"
+      }
+    ],
+    "url": "https://ananyarao.example.com"
+  },
+  "education": [
+    {
+      "institution": "Northfield Institute of Technology",
+      "studyType": "B.Tech",
+      "area": "Computer Science and Engineering",
+      "location": "Pune, India",
+      "startDate": "2023-08",
+      "endDate": "2027-05",
+      "score": "CGPA 9.1/10",
+      "courses": [
+        "Data Structures & Algorithms",
+        "Operating Systems",
+        "DBMS",
+        "Computer Networks",
+        "Machine Learning"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": [
+        "Java",
+        "Python",
+        "TypeScript",
+        "C++",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Frameworks",
+      "keywords": [
+        "React",
+        "Next.js",
+        "Node.js",
+        "Express.js",
+        "Spring Boot",
+        "FastAPI",
+        "Tailwind CSS"
+      ]
+    },
+    {
+      "name": "Data & Cloud",
+      "keywords": [
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Docker",
+        "AWS (EC2, S3)",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "name": "AI",
+      "keywords": [
+        "LLMs",
+        "RAG",
+        "LangChain",
+        "Vector Databases (pgvector)"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "CampusCart",
+      "url": "https://github.com/ananyarao-example/campuscart",
+      "keywords": [
+        "Next.js",
+        "Node.js",
+        "PostgreSQL",
+        "Redis"
+      ],
+      "startDate": "2025-08",
+      "highlights": [
+        "Student marketplace with listings, chat and UPI payment links; 1,200 registered users across 3 campuses in the first semester.",
+        "Cut listing-page load time from 2.8 s to 0.9 s with server-side rendering, image CDN and Redis caching.",
+        "Shipped with CI on GitHub Actions and Dockerized deploys to AWS EC2; 85% backend test coverage with Jest."
+      ]
+    },
+    {
+      "name": "PaperTrail",
+      "url": "https://github.com/ananyarao-example/papertrail",
+      "keywords": [
+        "Python",
+        "FastAPI",
+        "LangChain",
+        "pgvector"
+      ],
+      "startDate": "2025-01",
+      "endDate": "2025-04",
+      "highlights": [
+        "Retrieval-augmented question answering over 5,000 research PDFs with cited answers; 1st place among 120 teams at HackNorth Pune 2025.",
+        "Improved answer accuracy from 61% to 78% on a 200-question eval set by adding hybrid BM25 + vector retrieval and re-ranking."
+      ]
+    },
+    {
+      "name": "raftkv",
+      "url": "https://github.com/ananyarao-example/raftkv",
+      "keywords": [
+        "Go",
+        "gRPC",
+        "Raft"
+      ],
+      "startDate": "2024-10",
+      "endDate": "2024-12",
+      "highlights": [
+        "Fault-tolerant key-value store implementing Raft leader election and log replication; passes linearizability tests with 5 nodes under network partitions."
+      ]
+    }
+  ],
+  "work": [
+    {
+      "name": "Finlytics",
+      "position": "Software Engineering Intern",
+      "location": "Bengaluru, India",
+      "startDate": "2025-05",
+      "endDate": "2025-07",
+      "highlights": [
+        "Built a React and Spring Boot dashboard for loan-portfolio analytics used daily by 40 analysts.",
+        "Reduced monthly report generation from 40 s to 6 s by replacing N+1 queries with batched SQL and adding pagination."
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "1st place, HackNorth Pune 2025",
+      "awarder": "120 teams",
+      "date": "2025-02"
+    },
+    {
+      "title": "LeetCode rating 2,050 (top 3% globally)",
+      "date": "2025-10"
+    },
+    {
+      "title": "Merit scholarship for top 2% of the department",
+      "awarder": "Northfield Institute of Technology",
+      "date": "2024-07"
+    }
+  ],
+  "certificates": [],
+  "meta": {
+    "template": "compact",
+    "region": "in",
+    "maxPages": 1
+  }
+}

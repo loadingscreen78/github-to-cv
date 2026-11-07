@@ -1,0 +1,41 @@
+{
+  "name": "modern",
+  "displayName": "Modern",
+  "description": "Clean sans-serif with a navy accent and left-aligned header. The safe default for most tech roles.",
+  "bestFor": [
+    "Software engineering (backend, frontend, full-stack, mobile)",
+    "Data science / ML / AI",
+    "DevOps, SRE, cloud",
+    "Startups and product companies"
+  ],
+  "atsSafe": true,
+  "pages": "1–2",
+  "entryStyle": "title-first",
+  "headerAlign": "left",
+  "accent": "#1f4e79",
+  "basePt": 10,
+  "margins": "0.55in 0.6in",
+  "defaultSectionOrder": [
+    "summary",
+    "skills",
+    "work",
+    "projects",
+    "openSource",
+    "education",
+    "certificates",
+    "awards",
+    "publications",
+    "volunteer",
+    "languages"
+  ],
+  "docx": {
+    "font": "Calibri",
+    "size": 10.5,
+    "nameSize": 24,
+    "align": "left",
+    "accentName": true,
+    "accentLabel": false,
+    "allCapsHeadings": true,
+    "margin": 0.6
+  }
+}

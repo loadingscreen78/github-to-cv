@@ -1,0 +1,21 @@
+/* Executive — authoritative, summary-first */
+:root {
+  --font-body: "Calibri", "Carlito", "Segoe UI", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  --font-head: Cambria, "Caladea", Georgia, "Times New Roman", serif;
+  --text: #1d232b; --muted: #56606c; --rule: #c4ccd6;
+  --lh: 1.34; --name-size: 2.6rem; --h2-size: 1.15rem;
+  --section-gap: 0.95rem; --entry-gap: 0.68rem; --header-gap: 0.9rem;
+  --bullet: var(--accent);
+}
+.cv-header { border-bottom: 3px solid var(--accent); padding-bottom: 0.6rem; }
+.cv-name { color: #14202b; letter-spacing: 0.005em; }
+.cv-label { text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.95rem; font-weight: 700; color: var(--accent); margin-top: 0.3rem; }
+.cv-contacts { color: var(--muted); }
+.section-title { color: var(--accent); border-bottom: 1px solid var(--rule); padding-bottom: 0.15rem; margin-bottom: 0.45rem; letter-spacing: 0.01em; }
+.summary { font-size: 1.03rem; }
+.skills-inline { line-height: 1.6; }
+.skills-inline .sep { color: var(--accent); }
+.entry-title { font-size: 1.04rem; color: #14202b; }
+.entry-sub, .role-title { font-style: normal; font-weight: 700; color: var(--accent); }
+.entry-right { color: var(--muted); }
+.entry-summary { font-style: italic; color: #2c3440; }

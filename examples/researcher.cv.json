@@ -1,0 +1,216 @@
+{
+  "$schema": "github-to-cv/cv@1",
+  "basics": {
+    "name": "Maya Fernandes",
+    "label": "PhD Candidate, Machine Learning",
+    "email": "maya.fernandes@example.ac.uk",
+    "location": {
+      "display": "Edinburgh, United Kingdom"
+    },
+    "url": "https://mayafernandes.example.com",
+    "profiles": [
+      {
+        "network": "GitHub",
+        "url": "https://github.com/mayaf-example"
+      },
+      {
+        "network": "Google Scholar",
+        "url": "https://scholar.example.com/mayaf"
+      }
+    ],
+    "summary": "Robustness of machine learning under distribution shift; efficient inference and evaluation for large language models; open, reproducible benchmarks."
+  },
+  "education": [
+    {
+      "institution": "Westbrook University",
+      "studyType": "Ph.D.",
+      "area": "Computer Science",
+      "location": "Edinburgh, UK",
+      "startDate": "2022-09",
+      "endDate": "2027-06",
+      "score": "Advisor: Prof. A. Lindqvist · Thesis: Measuring and mitigating distribution shift in deployed language models"
+    },
+    {
+      "institution": "Westbrook University",
+      "studyType": "M.Sc.",
+      "area": "Artificial Intelligence (Distinction)",
+      "location": "Edinburgh, UK",
+      "startDate": "2021-09",
+      "endDate": "2022-08"
+    },
+    {
+      "institution": "University of Lisbourne",
+      "studyType": "B.Sc.",
+      "area": "Mathematics and Computer Science",
+      "location": "Lisbon, Portugal",
+      "startDate": "2017-09",
+      "endDate": "2021-06",
+      "score": "First-class honours"
+    }
+  ],
+  "publications": [
+    {
+      "name": "ShiftBench: A Unified Benchmark for Distribution Shift in Language Model Evaluation",
+      "authors": "M. Fernandes, R. Okafor, A. Lindqvist",
+      "publisher": "Advances in Neural Information Processing Systems (NeurIPS), Datasets and Benchmarks Track",
+      "releaseDate": "2025-12",
+      "url": "https://arxiv.org/abs/0000.00001"
+    },
+    {
+      "name": "Calibrated Early Exiting for Efficient Transformer Inference",
+      "authors": "J. Chen, M. Fernandes, A. Lindqvist",
+      "publisher": "International Conference on Learning Representations (ICLR)",
+      "releaseDate": "2025-04"
+    },
+    {
+      "name": "When Does Fine-Tuning Hurt Robustness? An Empirical Study",
+      "authors": "M. Fernandes, A. Lindqvist",
+      "publisher": "Workshop on Distribution Shifts, NeurIPS",
+      "releaseDate": "2023-12",
+      "note": "Oral presentation"
+    }
+  ],
+  "work": [
+    {
+      "name": "Northlight AI Research",
+      "position": "Research Scientist Intern",
+      "location": "London, UK",
+      "startDate": "2024-06",
+      "endDate": "2024-09",
+      "highlights": [
+        "Developed a shift-detection method for production LLM traffic that flagged 92% of injected drift events with a 3% false-positive rate.",
+        "Released the evaluation harness internally; adopted by 2 product teams for weekly model monitoring."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "shiftbench",
+      "url": "https://github.com/mayaf-example/shiftbench",
+      "keywords": [
+        "Python",
+        "PyTorch",
+        "Hugging Face"
+      ],
+      "startDate": "2024-01",
+      "highlights": [
+        "Open-source benchmark library accompanying the NeurIPS paper: 14 datasets, 30+ baselines, 350 GitHub stars, 9 external contributors."
+      ]
+    },
+    {
+      "name": "early-exit-transformers",
+      "url": "https://github.com/mayaf-example/early-exit-transformers",
+      "keywords": [
+        "PyTorch",
+        "CUDA"
+      ],
+      "startDate": "2024-09",
+      "highlights": [
+        "Reference implementation for the ICLR paper; 1.8x inference speed-up at equal accuracy on GLUE."
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Doctoral Training Studentship (full funding)",
+      "awarder": "Westbrook University",
+      "date": "2022-09"
+    },
+    {
+      "title": "Best Paper Award",
+      "awarder": "Workshop on Distribution Shifts, NeurIPS",
+      "date": "2023-12"
+    }
+  ],
+  "customSections": [
+    {
+      "id": "teaching",
+      "title": "Teaching",
+      "entries": [
+        {
+          "title": "Teaching Assistant, Machine Learning Practical",
+          "subtitle": "Westbrook University · 180 students",
+          "date": "2023 – 2025"
+        },
+        {
+          "title": "Guest Lecture, Robustness in Deep Learning",
+          "subtitle": "Westbrook University, MSc AI",
+          "date": "Mar 2025"
+        }
+      ]
+    },
+    {
+      "id": "talks",
+      "title": "Invited Talks",
+      "entries": [
+        {
+          "title": "Benchmarks that age well",
+          "subtitle": "ML Reading Group, University of Lisbourne",
+          "date": "Feb 2026"
+        },
+        {
+          "title": "Measuring shift in deployed LLMs",
+          "subtitle": "Northlight AI Research",
+          "date": "Sep 2024"
+        }
+      ]
+    },
+    {
+      "id": "service",
+      "title": "Service",
+      "items": [
+        "Reviewer: NeurIPS (2024, 2025), ICLR (2025, 2026), TMLR",
+        "Organiser, Westbrook ML Reading Group (2023–present)"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "keywords": [
+        "Python",
+        "PyTorch",
+        "JAX",
+        "CUDA",
+        "C++",
+        "SQL"
+      ]
+    },
+    {
+      "name": "ML tooling",
+      "keywords": [
+        "Hugging Face",
+        "Weights & Biases",
+        "Slurm",
+        "Docker"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Portuguese",
+      "fluency": "Native"
+    }
+  ],
+  "meta": {
+    "template": "academic",
+    "region": "uk",
+    "sectionOrder": [
+      "summary",
+      "education",
+      "publications",
+      "work",
+      "projects",
+      "awards",
+      "teaching",
+      "talks",
+      "service",
+      "skills",
+      "languages"
+    ]
+  }
+}

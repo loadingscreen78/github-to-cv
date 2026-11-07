@@ -1,0 +1,15 @@
+# Personal CV workspaces (contain contact details) — never commit
+cv-output/
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+# Temp render artefacts
+*.pdf.tmp

@@ -1,0 +1,49 @@
+{
+  "name": "academic",
+  "displayName": "Academic",
+  "description": "Research CV: education first, numbered publications with your name in bold, research software, talks/teaching via custom sections. Multi-page is fine.",
+  "bestFor": [
+    "PhD, postdoc and faculty applications",
+    "Research scientist / research engineer roles",
+    "Fellowships and grad-school applications"
+  ],
+  "atsSafe": true,
+  "pages": "2+",
+  "entryStyle": "title-first",
+  "headerAlign": "center",
+  "accent": "#6b1d1d",
+  "basePt": 10.5,
+  "margins": "0.75in 0.8in",
+  "citationStyle": true,
+  "sectionTitles": {
+    "summary": "Research Interests",
+    "work": "Research & Professional Experience",
+    "projects": "Research Software",
+    "openSource": "Open-Source Contributions",
+    "awards": "Honors & Awards",
+    "skills": "Technical Skills"
+  },
+  "defaultSectionOrder": [
+    "summary",
+    "education",
+    "publications",
+    "work",
+    "projects",
+    "openSource",
+    "awards",
+    "skills",
+    "certificates",
+    "volunteer",
+    "languages"
+  ],
+  "docx": {
+    "font": "Cambria",
+    "size": 10.5,
+    "nameSize": 20,
+    "align": "center",
+    "useAccent": true,
+    "accentLabel": false,
+    "allCapsHeadings": false,
+    "margin": 0.8
+  }
+}

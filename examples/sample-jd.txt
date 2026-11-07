@@ -1,0 +1,23 @@
+Senior Backend Engineer — Payments Platform
+
+About the role
+We're building the money-movement platform behind thousands of businesses. You'll design and scale the services that move billions of dollars a year.
+
+What you'll do
+- Design, build and operate high-throughput services in Go and Python
+- Own the ledger and payments APIs (REST and gRPC) end to end
+- Improve reliability, observability and performance of our distributed systems
+- Mentor engineers and lead technical design reviews
+
+Requirements
+- 5+ years of backend engineering experience
+- Strong experience with Go or Python
+- Deep knowledge of PostgreSQL and Redis
+- Experience with Kafka or other message queues and event-driven architecture
+- Experience running services on Kubernetes and AWS
+- CI/CD and infrastructure as code (Terraform)
+
+Nice to have
+- Payments, fintech or ledger experience
+- Experience with Snowflake or dbt
+- Contributions to open source

@@ -1,0 +1,108 @@
+/* github-to-cv — shared structure. Templates set the look in style.css using the
+   custom properties below. Sizes are in rem so render.py can scale the whole page
+   (html font-size) to fit a page limit. */
+
+:root {
+  --font-body: "Calibri", "Carlito", "Segoe UI", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  --font-head: var(--font-body);
+  --text: #1a1a1a;
+  --muted: #555b65;
+  --rule: #c9ced6;
+  --lh: 1.32;
+  --name-size: 2.2rem;
+  --header-gap: 0.85rem;
+  --section-gap: 0.8rem;
+  --entry-gap: 0.5rem;
+  --h2-size: 1.05rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  line-height: var(--lh);
+  /* Ligatures turn "fi"/"fl" into single glyphs that some ATS parsers drop. */
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "clig" 0, "dlig" 0;
+  font-kerning: normal;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  overflow-wrap: break-word;
+}
+a { color: inherit; text-decoration: none; }
+h1, h2, h3, p, ul, ol { margin: 0; padding: 0; }
+strong { font-weight: 700; }
+
+/* Paper preview on screen; real margins come from @page when printing. */
+@media screen {
+  body { background: #e8eaed; padding: 28px 0; }
+  .page {
+    width: var(--page-w); min-height: var(--page-h); margin: 0 auto; padding: var(--margins);
+    background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 10px 30px rgba(0,0,0,.08);
+  }
+}
+@media print {
+  .page { width: auto; min-height: 0; padding: 0; margin: 0; box-shadow: none; }
+}
+
+/* ATS rule (tested): never use font-variant: small-caps, and keep letter-spacing on
+   uppercase text at or below 0.08em — wider tracking makes parsers split words
+   ("P R O F E S S I O N A L"), so section headings stop being recognised. */
+
+/* Header ------------------------------------------------------------------ */
+.cv-header { margin-bottom: var(--header-gap); }
+.align-center .cv-header { text-align: center; }
+.cv-name { font-family: var(--font-head); font-size: var(--name-size); line-height: 1.1; font-weight: 700; }
+.cv-label { font-size: 1.08rem; margin-top: 0.2rem; }
+.cv-contacts { margin-top: 0.35rem; font-size: 0.92rem; }
+.cv-contacts .sep { color: var(--muted); }
+.cv-contacts + .cv-contacts { margin-top: 0.08rem; }
+.contact { white-space: nowrap; }
+
+/* Sections ---------------------------------------------------------------- */
+.section { margin-top: var(--section-gap); }
+.section-title {
+  font-family: var(--font-head); font-size: var(--h2-size); font-weight: 700;
+  margin-bottom: 0.35rem; break-after: avoid; page-break-after: avoid;
+}
+
+/* Entries ------------------------------------------------------------------- */
+.entry { margin-top: var(--entry-gap); }
+.section-title + .entry { margin-top: 0; }
+.entry-row {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 0.9rem;
+  break-after: avoid; page-break-after: avoid;
+}
+.entry-main { min-width: 0; }
+.entry-title { font-weight: 700; }
+.entry-right { flex: 0 0 auto; white-space: nowrap; text-align: right; }
+.entry-sub { font-style: italic; }
+.entry-link { font-size: 0.9rem; color: var(--muted); }
+.entry-link .sep { color: var(--muted); }
+.entry-detail { font-size: 0.95rem; }
+.entry-summary { margin-top: 0.12rem; }
+.entry--compact { break-inside: avoid; page-break-inside: avoid; }
+.entry--compact + .entry--compact { margin-top: 0.18rem; }
+
+/* Bullets are a real "•" character on the same text line (hanging indent), so every
+   PDF parser we tested (pdfminer, pypdf, poppler) reads "• Led the…" in order.
+   Native list markers are drawn as shapes (no text); absolutely-positioned glyphs get
+   scattered by layout-analysis parsers. Do not change without re-running tests. */
+.bullets { list-style: none; margin: 0.18rem 0 0 0; padding-left: 1rem; }
+.bullets li { text-indent: -0.8rem; margin: 0.1rem 0; break-inside: avoid; page-break-inside: avoid; }
+.bullets li::before { content: "•"; display: inline-block; width: 0.8rem; text-indent: 0; color: var(--bullet, currentColor); }
+
+.role { margin-top: 0.3rem; }
+.role-title { font-style: italic; font-weight: 600; }
+
+/* Skills & inline lists --------------------------------------------------------- */
+.skill-line { margin: 0.08rem 0; }
+.skill-cat { font-weight: 700; }
+.skills-inline .sep, .inline-list .sep { color: var(--muted); }
+.kw { white-space: nowrap; }
+
+/* Publications --------------------------------------------------------------------- */
+.pubs { padding-left: 1.5rem; }
+.pubs li { margin: 0.22rem 0; break-inside: avoid; page-break-inside: avoid; }
+.pub-link { color: var(--muted); font-size: 0.92rem; }

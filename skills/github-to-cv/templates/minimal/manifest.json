@@ -1,0 +1,43 @@
+{
+  "name": "minimal",
+  "displayName": "Minimal",
+  "description": "Dense, black-only, centred header with ruled section headings — the classic engineering one-pager.",
+  "bestFor": [
+    "Big-tech / FAANG-style SWE applications",
+    "New grads and interns",
+    "Competitive one-page resumes",
+    "Recruiters who skim fast"
+  ],
+  "atsSafe": true,
+  "pages": "1",
+  "entryStyle": "title-first",
+  "headerAlign": "center",
+  "accent": "#000000",
+  "basePt": 10,
+  "margins": "0.5in 0.55in",
+  "sectionTitles": {
+    "skills": "Technical Skills"
+  },
+  "defaultSectionOrder": [
+    "summary",
+    "work",
+    "projects",
+    "openSource",
+    "education",
+    "skills",
+    "certificates",
+    "awards",
+    "publications",
+    "volunteer",
+    "languages"
+  ],
+  "docx": {
+    "font": "Arial",
+    "size": 10,
+    "nameSize": 22,
+    "align": "center",
+    "useAccent": false,
+    "allCapsHeadings": false,
+    "margin": 0.55
+  }
+}

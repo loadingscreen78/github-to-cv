@@ -1,0 +1,19 @@
+/* Minimal — dense, black, ruled headings */
+:root {
+  --font-body: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", "TeX Gyre Heros", sans-serif;
+  --text: #000; --muted: #333; --rule: #000;
+  --lh: 1.24; --name-size: 2.05rem; --h2-size: 1.1rem;
+  --section-gap: 0.62rem; --entry-gap: 0.42rem; --header-gap: 0.55rem;
+}
+.cv-name { letter-spacing: 0.01em; }
+.cv-label { font-size: 1rem; }
+.cv-contacts { font-size: 0.9rem; margin-top: 0.25rem; }
+.cv-contacts a { text-decoration: underline; text-underline-offset: 1.5px; text-decoration-thickness: 0.5px; }
+.section-title {
+  text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; font-size: 0.98rem;
+  border-bottom: 0.8pt solid var(--rule); padding-bottom: 0.04rem; margin-bottom: 0.3rem;
+}
+.row-2 { font-style: italic; font-size: 0.96rem; }
+.entry-right { font-size: 0.96rem; }
+.bullets li { font-size: 0.97rem; margin: 0.06rem 0; }
+.entry-link { color: #000; }

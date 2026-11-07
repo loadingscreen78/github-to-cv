@@ -1,0 +1,46 @@
+{
+  "name": "classic",
+  "displayName": "Classic",
+  "description": "Traditional serif layout, centred header, company-first entries. Conservative and timeless.",
+  "bestFor": [
+    "Finance, banking, consulting",
+    "Government and public sector",
+    "Enterprise / IT services",
+    "UK, EU and India applications",
+    "Career changers who want a formal look"
+  ],
+  "atsSafe": true,
+  "pages": "1–2",
+  "entryStyle": "org-first",
+  "headerAlign": "center",
+  "accent": "#111111",
+  "basePt": 10.5,
+  "margins": "0.6in 0.7in",
+  "sectionTitles": {
+    "summary": "Professional Summary",
+    "work": "Professional Experience"
+  },
+  "defaultSectionOrder": [
+    "summary",
+    "work",
+    "projects",
+    "openSource",
+    "education",
+    "skills",
+    "certificates",
+    "awards",
+    "publications",
+    "volunteer",
+    "languages"
+  ],
+  "docx": {
+    "font": "Georgia",
+    "size": 10.5,
+    "nameSize": 22,
+    "align": "center",
+    "useAccent": false,
+    "accentLabel": false,
+    "allCapsHeadings": true,
+    "margin": 0.7
+  }
+}

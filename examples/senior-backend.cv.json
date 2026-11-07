@@ -1,0 +1,199 @@
+{
+  "$schema": "github-to-cv/cv@1",
+  "basics": {
+    "name": "Jordan Lee",
+    "label": "Senior Backend Engineer",
+    "email": "jordan.lee@example.com",
+    "phone": "+1 (555) 010-0199",
+    "url": "https://jordanlee.example.com",
+    "summary": "Backend engineer with 8 years of experience building high-throughput payment and ledger systems in Go and Python. Led the redesign of Northwind Pay's ledger to 4x throughput at 99.99% availability. Author of open-source infrastructure tools with 800+ GitHub stars and merged contributions to httpx and the Prometheus Python client.",
+    "location": {
+      "city": "Austin",
+      "region": "TX"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/jordanlee-example"
+      },
+      {
+        "network": "GitHub",
+        "username": "jordanlee-example",
+        "url": "https://github.com/jordanlee-example"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Northwind Pay",
+      "position": "Senior Software Engineer, Payments Platform",
+      "location": "Austin, TX",
+      "startDate": "2023-04",
+      "highlights": [
+        "Led the redesign of the double-entry ledger service in Go and PostgreSQL, raising peak throughput 4x to 6,000 transfers/sec while holding 99.99% availability through Black Friday traffic.",
+        "Introduced a transactional outbox on Kafka for payment events, eliminating dual-write inconsistencies that caused ~30 reconciliation tickets per month.",
+        "Cut p99 API latency from 180 ms to 45 ms with Redis caching for balance reads and covering indexes on the hottest PostgreSQL queries.",
+        "Mentor 4 engineers and run the backend design-review guild; authored the RFC process now used by 6 teams."
+      ]
+    },
+    {
+      "name": "Northwind Pay",
+      "position": "Software Engineer",
+      "location": "Austin, TX",
+      "startDate": "2021-02",
+      "endDate": "2023-03",
+      "highlights": [
+        "Built the idempotent transfers API (gRPC and REST) that now processes $1.2B in annual payment volume.",
+        "Migrated 40+ services to Kubernetes on AWS EKS with Helm and Terraform, reducing infrastructure cost by 28%.",
+        "Rolled out CI/CD on GitHub Actions with per-PR preview environments, cutting median review time from 2 days to 4 hours."
+      ]
+    },
+    {
+      "name": "Brightline Analytics",
+      "position": "Software Engineer",
+      "location": "Remote",
+      "startDate": "2018-06",
+      "endDate": "2021-01",
+      "highlights": [
+        "Developed Python (FastAPI, Celery) ingestion services processing 50M events/day for 300+ enterprise customers.",
+        "Designed the public API's rate limiting, later open-sourced as fastapi-ratelimit (268 GitHub stars).",
+        "Reduced on-call pages by 60% by adding OpenTelemetry tracing and SLO-based alerting in Grafana."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Ledgerline",
+      "url": "https://github.com/jordanlee-example/ledgerline",
+      "keywords": [
+        "Go",
+        "PostgreSQL",
+        "gRPC",
+        "Kafka"
+      ],
+      "startDate": "2024-02",
+      "highlights": [
+        "Open-source double-entry ledger with idempotent transfers and event sourcing; 412 GitHub stars and 37 forks.",
+        "Sustains 4,800 transfers/sec at p99 under 35 ms on a single 4-vCPU node in published benchmarks."
+      ]
+    },
+    {
+      "name": "fastapi-ratelimit",
+      "url": "https://github.com/jordanlee-example/fastapi-ratelimit",
+      "keywords": [
+        "Python",
+        "FastAPI",
+        "Redis",
+        "pytest"
+      ],
+      "startDate": "2023-05",
+      "highlights": [
+        "Async rate-limiting middleware (sliding window and token bucket) published on PyPI; under 0.4 ms overhead per request at 20k req/s, 96% test coverage."
+      ]
+    },
+    {
+      "name": "k8s-preview-envs",
+      "url": "https://github.com/jordanlee-example/k8s-preview-envs",
+      "keywords": [
+        "Terraform",
+        "Helm",
+        "GitHub Actions",
+        "Go"
+      ],
+      "startDate": "2024-09",
+      "highlights": [
+        "Ephemeral preview environment per pull request on EKS or GKE, with a Go controller that garbage-collects stale namespaces; 95 GitHub stars."
+      ]
+    }
+  ],
+  "openSource": [
+    {
+      "project": "encode/httpx",
+      "url": "https://github.com/encode/httpx",
+      "role": "Contributor",
+      "startDate": "2024-04",
+      "endDate": "2025-11",
+      "highlights": [
+        "3 merged PRs to the 13.9k-star Python HTTP client, including a fix for a connection-pool leak on cancelled requests."
+      ]
+    },
+    {
+      "project": "prometheus/client_python",
+      "url": "https://github.com/prometheus/client_python",
+      "role": "Contributor",
+      "startDate": "2025-02",
+      "endDate": "2025-06",
+      "highlights": [
+        "Added exemplar support in multiprocess mode (merged), used by services exporting traces alongside metrics."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "The University of Texas at Austin",
+      "studyType": "B.S.",
+      "area": "Computer Science",
+      "location": "Austin, TX",
+      "startDate": "2014-08",
+      "endDate": "2018-05"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": [
+        "Go",
+        "Python",
+        "SQL",
+        "Bash"
+      ]
+    },
+    {
+      "name": "Backend",
+      "keywords": [
+        "gRPC",
+        "REST APIs",
+        "FastAPI",
+        "Kafka",
+        "Redis",
+        "PostgreSQL",
+        "Microservices",
+        "Event-Driven Architecture"
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "keywords": [
+        "AWS (EKS, RDS, S3)",
+        "Kubernetes",
+        "Helm",
+        "Terraform",
+        "Docker",
+        "CI/CD",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "name": "Observability",
+      "keywords": [
+        "OpenTelemetry",
+        "Prometheus",
+        "Grafana",
+        "SLOs"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "AWS Certified Solutions Architect – Associate",
+      "issuer": "Amazon Web Services",
+      "date": "2022-09"
+    }
+  ],
+  "meta": {
+    "template": "modern",
+    "region": "us",
+    "level": "senior",
+    "maxPages": 2
+  }
+}

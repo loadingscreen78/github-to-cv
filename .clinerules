@@ -1,0 +1,6 @@
+# github-to-cv
+
+When the user wants a CV/resume from a GitHub profile (or tailored to a job description):
+read AGENTS.md, then follow skills/github-to-cv/SKILL.md step by step. Interview in rounds of
+≤ 5 questions (skills/github-to-cv/references/interview.md), run skills/github-to-cv/scripts/*,
+write outputs to cv-output/<github-username>/, never invent facts, use only ATS-safe templates.

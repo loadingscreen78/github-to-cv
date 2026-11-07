@@ -1,0 +1,46 @@
+{
+  "name": "compact",
+  "displayName": "Compact",
+  "description": "One-page, education-first, single-line entry headers to fit maximum projects. Built for students and early-career applicants.",
+  "bestFor": [
+    "Students and interns",
+    "New grads (0–2 years)",
+    "Campus placements (India), co-op and graduate schemes",
+    "Hackathon-heavy profiles"
+  ],
+  "atsSafe": true,
+  "pages": "1",
+  "entryStyle": "inline",
+  "headerAlign": "left",
+  "accent": "#0f5e8c",
+  "basePt": 9.8,
+  "margins": "0.45in 0.5in",
+  "sectionTitles": {
+    "skills": "Technical Skills",
+    "work": "Experience",
+    "awards": "Achievements"
+  },
+  "defaultSectionOrder": [
+    "summary",
+    "education",
+    "skills",
+    "projects",
+    "work",
+    "openSource",
+    "awards",
+    "certificates",
+    "volunteer",
+    "publications",
+    "languages"
+  ],
+  "docx": {
+    "font": "Calibri",
+    "size": 10,
+    "nameSize": 20,
+    "align": "left",
+    "accentName": true,
+    "accentLabel": false,
+    "allCapsHeadings": true,
+    "margin": 0.5
+  }
+}

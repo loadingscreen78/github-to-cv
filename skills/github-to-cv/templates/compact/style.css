@@ -1,0 +1,16 @@
+/* Compact — one-page, single-line entry headers */
+:root {
+  --font-body: "Calibri", "Carlito", "Segoe UI", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  --text: #111827; --muted: #4b5563; --rule: #cbd5e1;
+  --lh: 1.25; --name-size: 1.95rem; --h2-size: 0.92rem;
+  --section-gap: 0.55rem; --entry-gap: 0.34rem; --header-gap: 0.55rem;
+  --bullet: var(--accent);
+}
+.cv-name { color: var(--accent); }
+.cv-label { font-weight: 600; font-size: 1rem; margin-top: 0.1rem; }
+.cv-contacts { margin-top: 0.2rem; }
+.section-title { text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); border-bottom: 1px solid var(--rule); padding-bottom: 0.08rem; margin-bottom: 0.25rem; }
+.entry-extra { color: #374151; }
+.entry-right { color: var(--muted); }
+.bullets { margin-top: 0.1rem; }
+.bullets li { margin: 0.04rem 0; }

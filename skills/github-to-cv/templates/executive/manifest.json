@@ -1,0 +1,51 @@
+{
+  "name": "executive",
+  "displayName": "Executive",
+  "description": "Authoritative layout for senior people: bold header rule, summary-first, keyword block, company-first roles with promotions grouped.",
+  "bestFor": [
+    "Senior, Staff, Principal engineers",
+    "Engineering managers, tech leads, architects",
+    "Directors / CTO / Head-of roles",
+    "10+ years of experience (2 pages)"
+  ],
+  "atsSafe": true,
+  "pages": "2",
+  "entryStyle": "org-first",
+  "headerAlign": "left",
+  "accent": "#0b3d5c",
+  "basePt": 10.5,
+  "margins": "0.6in 0.65in",
+  "skillsStyle": "inline",
+  "sectionTitles": {
+    "summary": "Professional Summary",
+    "skills": "Core Competencies",
+    "work": "Professional Experience",
+    "projects": "Selected Projects",
+    "openSource": "Open Source & Community"
+  },
+  "defaultSectionOrder": [
+    "summary",
+    "skills",
+    "work",
+    "projects",
+    "openSource",
+    "education",
+    "certificates",
+    "awards",
+    "publications",
+    "volunteer",
+    "languages"
+  ],
+  "docx": {
+    "font": "Calibri",
+    "headingFont": "Cambria",
+    "size": 10.5,
+    "nameSize": 26,
+    "align": "left",
+    "accentName": false,
+    "accentLabel": true,
+    "allCapsHeadings": false,
+    "ruleAccent": true,
+    "margin": 0.65
+  }
+}

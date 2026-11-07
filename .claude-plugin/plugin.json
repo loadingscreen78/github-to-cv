@@ -1,0 +1,10 @@
+{
+  "name": "github-to-cv",
+  "version": "1.0.0",
+  "description": "Turn a GitHub profile into an ATS-optimised, job-tailored CV. Guided interview (role, field, seniority, domain, JD, region, template), evidence-graded repo analysis, six ATS-safe templates or your own, PDF/DOCX/TXT output and an ATS score.",
+  "author": { "name": "Jagannath", "url": "https://github.com/loadingscreen78" },
+  "homepage": "https://github.com/loadingscreen78/github-to-cv",
+  "repository": "https://github.com/loadingscreen78/github-to-cv",
+  "license": "MIT",
+  "keywords": ["resume", "cv", "ats", "github", "career", "job-search", "skill"]
+}

@@ -1,0 +1,1 @@
+-r skills/github-to-cv/requirements.txt
